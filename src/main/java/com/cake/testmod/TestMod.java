@@ -1,13 +1,14 @@
 package com.cake.testmod;
 
-import proxy.IProxy;
+import com.cake.testmod.proxy.IProxy;
+
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 
-@Mod(modid="TestMod",name="TestMod",version="1.7.2-1.0")
+@Mod(modid=com.cake.testmod.reference.Reference.Mod_Id,name=com.cake.testmod.reference.Reference.Mod_name,version=com.cake.testmod.reference.Reference.Version)
 
 public class TestMod {
 	@Mod.Instance("TestMod")
