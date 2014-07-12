@@ -1,6 +1,8 @@
 package com.cake.testmod;
 
+import com.cake.testmod.configuration.ConfigurationManager;
 import com.cake.testmod.proxy.IProxy;
+import com.cake.testmod.reference.Reference;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
@@ -8,19 +10,19 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 
-@Mod(modid=com.cake.testmod.reference.Reference.Mod_Id,name=com.cake.testmod.reference.Reference.Mod_name,version=com.cake.testmod.reference.Reference.Version)
+@Mod(modid=Reference.Mod_Id,name=Reference.Mod_name,version=com.cake.testmod.reference.Reference.Version)
 
 public class TestMod {
 	@Mod.Instance("TestMod")
 	public static TestMod instance;
 	
-	@SidedProxy(clientSide="com.cake.testmod.proxy.ClientProxy",serverSide="com.cake.testmod.proxy.ServerProxy")
+	@SidedProxy(clientSide=Reference.Client_Proxy_Class,serverSide=Reference.Server_Proxy_Class)
 	public static IProxy proxy;
 	
 	
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
-		//System.out.println("CAKE WAS HERE");
+		ConfigurationManager.Init(event.getSuggestedConfigurationFile());
 	}
 	@Mod.EventHandler
 	public void Init(FMLInitializationEvent event) {
