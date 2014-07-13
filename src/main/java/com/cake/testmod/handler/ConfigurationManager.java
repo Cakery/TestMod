@@ -12,6 +12,7 @@ import net.minecraftforge.common.config.Configuration;
 public class ConfigurationManager {
 	public static Configuration configuration;
 	public static boolean TestValue;
+	public static String startup;
 	
 	public static void Init(File configFile) {
 		if (configuration==null) {
@@ -28,8 +29,9 @@ public class ConfigurationManager {
 
 	}
 
-	public void LoadConfigurations() {
+	public static void LoadConfigurations() {
 		TestValue=configuration.getBoolean("ConfigValue", configuration.CATEGORY_GENERAL, true, "Test Value");
+		startup=configuration.getString("test", configuration.CATEGORY_GENERAL, "CAKE WAS HERE", "WELL THEN");
 		if (configuration.hasChanged()) {
 			configuration.save();
 		}

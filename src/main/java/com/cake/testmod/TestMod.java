@@ -23,6 +23,8 @@ public class TestMod {
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		ConfigurationManager.Init(event.getSuggestedConfigurationFile());
+		ConfigurationManager.LoadConfigurations();
+		System.out.println(ConfigurationManager.startup);
 	}
 	@Mod.EventHandler
 	public void Init(FMLInitializationEvent event) {
