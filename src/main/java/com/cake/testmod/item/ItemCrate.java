@@ -5,7 +5,7 @@ public class ItemCrate extends ItemTM {
 	public ItemCrate() {
 		super();
 		
-		this.setUnlocalizedName("ItemCrate");
+		this.setUnlocalizedName("itemCrate");
 		
 	}
 	
