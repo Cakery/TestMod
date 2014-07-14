@@ -1,5 +1,7 @@
 package com.cake.testmod;
 
+import init.ModInit;
+
 import com.cake.testmod.handler.ConfigurationManager;
 import com.cake.testmod.proxy.IProxy;
 import com.cake.testmod.reference.Reference;
@@ -26,7 +28,7 @@ public class TestMod {
 	public void preInit(FMLPreInitializationEvent event) {
 		ConfigurationManager.Init(event.getSuggestedConfigurationFile());
 		FMLCommonHandler.instance().bus().register(new ConfigurationManager());
-		
+		ModInit.init();
 	}
 	@Mod.EventHandler
 	public void Init(FMLInitializationEvent event) {
