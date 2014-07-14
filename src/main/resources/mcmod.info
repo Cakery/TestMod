@@ -3,8 +3,8 @@
   "modid": "TestMod",
   "name": "TestMod",
   "description": "A test mod that Cake made!",
-  "version": "1.7.2-1.0",
-  "mcversion": "1.7.2",
+  "version": "1.7.10-1.0",
+  "mcversion": "1.7.10",
   "url": "http://www.decentgaming.org/",
   "authors": [ "Cake" ]
 }
