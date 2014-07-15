@@ -1,5 +1,6 @@
 package com.cake.testmod.item;
 
+import com.cake.testmod.creativetab.CreativeTabTM;
 import com.cake.testmod.reference.Reference;
 
 import cpw.mods.fml.relauncher.Side;
@@ -13,7 +14,7 @@ public class ItemTM extends Item {
 
 	public ItemTM() {
 		super();
-		
+		this.setCreativeTab(CreativeTabTM.TM_TAB);
 	}
 	
     @Override

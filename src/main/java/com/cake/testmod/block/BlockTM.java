@@ -1,5 +1,6 @@
 package com.cake.testmod.block;
 
+import com.cake.testmod.creativetab.CreativeTabTM;
 import com.cake.testmod.reference.Reference;
 
 import net.minecraft.block.Block;
@@ -17,7 +18,7 @@ public BlockTM(Material material) {
 
 public BlockTM() {
 	this(Material.rock);
-	this.setCreativeTab(CreativeTabs.tabMisc);
+	this.setCreativeTab(CreativeTabTM.TM_TAB);
 }
 
 @Override
