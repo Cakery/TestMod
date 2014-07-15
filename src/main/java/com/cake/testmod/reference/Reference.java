@@ -7,4 +7,5 @@ public class Reference {
 	public static final String Client_Proxy_Class="com.cake.testmod.proxy.ClientProxy";
 	public static final String Server_Proxy_Class="com.cake.testmod.proxy.ServerProxy";
 	public static final String GUI_Factory_Class="com.cake.testmod.client.gui.GUIFactory";
+
 }

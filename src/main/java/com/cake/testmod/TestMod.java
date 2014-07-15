@@ -1,6 +1,7 @@
 package com.cake.testmod;
 
-import init.ModInit;
+import init.TMBlocks;
+import init.TMItems;
 
 import com.cake.testmod.handler.ConfigurationManager;
 import com.cake.testmod.proxy.IProxy;
@@ -28,11 +29,12 @@ public class TestMod {
 	public void preInit(FMLPreInitializationEvent event) {
 		ConfigurationManager.Init(event.getSuggestedConfigurationFile());
 		FMLCommonHandler.instance().bus().register(new ConfigurationManager());
-		ModInit.init();
+		TMBlocks.init();
+		TMItems.init();
 	}
 	@Mod.EventHandler
 	public void Init(FMLInitializationEvent event) {
-
+		
 	}
 	@Mod.EventHandler
 	public void Init(FMLPostInitializationEvent event) {
