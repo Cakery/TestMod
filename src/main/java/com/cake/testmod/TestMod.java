@@ -31,13 +31,15 @@ public class TestMod {
 		FMLCommonHandler.instance().bus().register(new ConfigurationManager());
 		TMBlocks.init();
 		TMItems.init();
+		
+		FMLCommonHandler.instance().bus().register(new Events());
 	}
 	@Mod.EventHandler
 	public void Init(FMLInitializationEvent event) {
 		
 	}
 	@Mod.EventHandler
-	public void Init(FMLPostInitializationEvent event) {
+	public void PostInit(FMLPostInitializationEvent event) {
 
 	}
 
