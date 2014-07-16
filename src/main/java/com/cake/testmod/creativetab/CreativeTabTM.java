@@ -1,7 +1,8 @@
 package com.cake.testmod.creativetab;
 
-import init.TMItems;
 
+
+import com.cake.testmod.reference.ItemRef;
 import com.cake.testmod.reference.Reference;
 
 import cpw.mods.fml.relauncher.Side;
@@ -18,7 +19,7 @@ public class CreativeTabTM {
 		@SideOnly(Side.CLIENT)
 		public Item getTabIconItem() {
 			// TODO Auto-generated method stub
-			return TMItems.itemCrate;
+			return ItemRef.itemCrate;
 		}
 		@Override
 		public String getTranslatedTabLabel() {
