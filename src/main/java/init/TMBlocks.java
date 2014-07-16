@@ -16,9 +16,6 @@ import cpw.mods.fml.common.registry.GameRegistry;
 
 @GameRegistry.ObjectHolder(Reference.Mod_Id)
 public class TMBlocks {
-
-	
-	
 	
 	public static void init() {
 		

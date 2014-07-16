@@ -10,7 +10,6 @@ import cpw.mods.fml.common.registry.GameRegistry;
 public class TMItems {
 	
 	
-	
 	public static void init() {
 		GameRegistry.registerItem(ItemRef.itemCrate, "ItemCrate");
 	}
