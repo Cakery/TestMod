@@ -8,6 +8,8 @@ public class BlackBrickBlock extends BlockTM {
 		this.setHardness(3F);
 		this.setResistance(12F);
 		this.setBlockTextureName("blackbricks");
+	
+		
 	}
 	
 }

@@ -2,3 +2,6 @@ item.testmod:itemCrate.name=Item Crate
 
 
 tile.testmod:blackbricks.name=Black Bricks
+
+
+itemGroup.testmod=Test Mod

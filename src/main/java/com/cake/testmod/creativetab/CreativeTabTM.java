@@ -13,17 +13,13 @@ import net.minecraft.item.Item;
 
 public class CreativeTabTM {
 	
-	public static final CreativeTabs TM_TAB=new CreativeTabs(Reference.Mod_Id) {
+	public static final CreativeTabs TM_TAB=new CreativeTabs(Reference.Mod_Id.toLowerCase()) {
 	
 		@Override
 		@SideOnly(Side.CLIENT)
 		public Item getTabIconItem() {
 			// TODO Auto-generated method stub
 			return ItemRef.itemCrate;
-		}
-		@Override
-		public String getTranslatedTabLabel() {
-			return "Test Mod";
 		}
 	};
 	
