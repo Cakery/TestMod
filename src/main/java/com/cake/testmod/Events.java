@@ -13,5 +13,6 @@ public class Events {
 	    	event.player.addChatMessage(new ChatComponentText("[Test Mod] Welcome to Test mod!"));
 	        
 	    }
+	  
 
 }

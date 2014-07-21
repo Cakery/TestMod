@@ -1,5 +1,5 @@
 item.testmod:itemCrate.name=Item Crate
-
+item.testmod:crateKey.name=Crate Key
 
 tile.testmod:blackbricks.name=Black Bricks
 
