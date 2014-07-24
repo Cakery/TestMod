@@ -2,6 +2,6 @@ item.testmod:itemCrate.name=Item Crate
 item.testmod:crateKey.name=Crate Key
 
 tile.testmod:blackbricks.name=Black Bricks
-
+tile.testmod:compactedIce.name=Compacted Ice
 
 itemGroup.testmod=Test Mod
