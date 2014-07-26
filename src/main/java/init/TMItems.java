@@ -21,10 +21,7 @@ public class TMItems {
 		GameRegistry.registerItem(ItemRef.crateKey, "CrateKey");
 		
 		
-		GameRegistry.addRecipe(new ItemStack(ItemRef.crateKey),
-				"xxx",
-				" xx",
-		        'x', Items.gold_nugget);
+
 		
 		
 	}

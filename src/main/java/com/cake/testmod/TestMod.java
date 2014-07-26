@@ -1,5 +1,6 @@
 package com.cake.testmod;
 
+import init.Recipe;
 import init.TMBlocks;
 import init.TMItems;
 
@@ -36,7 +37,7 @@ public class TestMod {
 	}
 	@Mod.EventHandler
 	public void Init(FMLInitializationEvent event) {
-		
+		Recipe.init();
 	}
 	@Mod.EventHandler
 	public void PostInit(FMLPostInitializationEvent event) {

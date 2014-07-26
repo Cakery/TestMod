@@ -22,11 +22,7 @@ public class TMBlocks {
 		GameRegistry.registerBlock(BlocksRef.blackBrick, "BlackBrick");
 		GameRegistry.registerBlock(BlocksRef.compactedIce, "CompactedIce");
 		
-		GameRegistry.addShapelessRecipe(new ItemStack(BlocksRef.blackBrick,1), new ItemStack(Blocks.brick_block),Items.dye);
-		GameRegistry.addRecipe(new ItemStack(BlocksRef.compactedIce),
-				"xxx",
-				"xxx",
-		        "xxx",'x', Blocks.ice);
+
 		
 		
 	

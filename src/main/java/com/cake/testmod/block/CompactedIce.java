@@ -11,7 +11,9 @@ public CompactedIce() {
 	this.setBlockName("compactedIce");
 	this.setBlockTextureName("compactedIce");
 	this.slipperiness=1F;
-	this.setStepSound(soundTypeSnow);
-	
+	this.setStepSound(soundTypeGlass);
+	this.blockHardness=5F;
+	this.lightOpacity=13;
+
 }
 }
